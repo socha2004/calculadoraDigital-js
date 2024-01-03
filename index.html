@@ -1,16 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
+    <!-- <link rel="stylesheet" href="assets/style.css"> -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+        :root {
+            --primary-color: rgb(17, 86, 102);
+            --primary-color-darker: rgb(9, 48, 56);
+        }
+
+        * {
+            box-sizing: border-box;
+            outline: 0;
+            color: #000;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--primary-color);
+            font-family: 'Open sans', sans-serif;
+            font-size: 1.3em;
+            line-height: 1.5em;
+        }
+
+        /* .container {
+            max-width: 640px;
+            margin: 50px auto;
+            background: #3f82c2;
+            padding: 20px;
+            border-radius: 10px;
+        } */
+
+        .calculadora {
+            max-width: 600px;
+            background-color: #fafafa;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 10px 5px 5px black;
+        }
+    </style>
     <title>Calculadora</title>
 </head>
+
 <body>
-    <section class="container">
-        <h2>Calculadora Digital</h2>
-        <input type="text">
+    <section class="container calculadora">
+        <div class="row">
+            <div class="col">
+                <h2>Calculadora Digital</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="text" class="text-box">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-primary">9</button>
+                <button class="btn btn-primary">8</button>
+                <button class="btn btn-primary">7</button>
+            </div>
+        </div>
+        <button class="btn btn-primary">6</button>
+        <button class="btn btn-primary">5</button>
+        <button class="btn btn-primary">4</button>
+        <button class="btn btn-primary">3</button>
+        <button class="btn btn-primary">2</button>
+        <button class="btn btn-primary">1</button>
+        <button class="btn btn-primary">0</button>
     </section>
     <script src="assets/script.js"></script>
 </body>
+
 </html>
