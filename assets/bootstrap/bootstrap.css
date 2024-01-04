@@ -792,6 +792,7 @@ progress {
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
+  margin-bottom: 10px;
 }
 .row > * {
   flex-shrink: 0;
@@ -1225,7 +1226,7 @@ progress {
   }
   .col-md-3 {
     flex: 0 0 auto;
-    width: 25%;
+    width: 30%;
   }
   .col-md-4 {
     flex: 0 0 auto;
@@ -3065,6 +3066,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #0d6efd;
   --bs-btn-disabled-border-color: #0d6efd;
+  padding: 10px 20px;
 }
 
 .btn-secondary {
@@ -3099,6 +3101,8 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #198754;
   --bs-btn-disabled-border-color: #198754;
+  padding: 10px 20px;
+
 }
 
 .btn-info {
@@ -3133,6 +3137,8 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #000;
   --bs-btn-disabled-bg: #ffc107;
   --bs-btn-disabled-border-color: #ffc107;
+  padding: 10px 20px;
+
 }
 
 .btn-danger {
