@@ -27,3 +27,8 @@ body {
   border-radius: 10px;
 }
 
+.painel{
+  background-color: #f3f3dc;
+  height: 100px;
+  resize: none;
+}
