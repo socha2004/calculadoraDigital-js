@@ -15,7 +15,6 @@ function adicionaNumero(valor) {
 
 function limpaCampo() {
     caixa_de_texto.value = '';
-    painel.value = '';
     while (numeros.length) {
         numeros.pop();
     }
@@ -24,21 +23,16 @@ function limpaCampo() {
 function realizaOperacao() {
     let flag = true;
 
-    if (caixa_de_texto.value = '') {
-        window.alert("Insira ao menos 2 valores para realizar o calculo.");
-        caixa_de_texto.value = ''
-        flag = false;
-    }
+    // if (caixa_de_texto.value = '') {
+    //     window.alert("Insira ao menos 2 valores para realizar o calculo.");
+    //     caixa_de_texto.value = '';
+    //     flag = false;
+    // }
     if (flag) {
-        // for (let i = 0; i < numeros.length; i++) {
-        //     resultado += parseFloat(numeros[i]);
-        // }
-        expressao = caixa_de_texto.value;
-        parseFloat(expressao);
-        eval(expressao);
-        console.log(typeof expressao, expressao);
-        window.alert(`A soma é ${expressao}`);
-        
+        let expressao;
+        expressao = eval(caixa_de_texto.value);
+        console.log(typeof expressao);
+        window.alert(`A soma é ${eval(caixa_de_texto.value)}`);
         caixa_de_texto.value = "";
     }
 
