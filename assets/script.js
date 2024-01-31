@@ -3,39 +3,31 @@ let numeros = [];
 let expressao;
 
 function adicionaNumero(valor) {
-    // caixa_de_texto.value += valor;
-    // if(valor == "+"){
-    //     numeros.push(caixa_de_texto.value);
-    //     caixa_de_texto.value += valor
-    // }else {
-    //     caixa_de_texto.value += valor;
-    // }
     caixa_de_texto.value += valor;
 }
-
 function limpaCampo() {
     caixa_de_texto.value = '';
     while (numeros.length) {
         numeros.pop();
     }
 }
-
 function realizaOperacao() {
     let flag = true;
-
-    // if (caixa_de_texto.value = '') {
-    //     window.alert("Insira ao menos 2 valores para realizar o calculo.");
-    //     caixa_de_texto.value = '';
-    //     flag = false;
-    // }
-    if (flag) {
-        let expressao;
-        expressao = eval(caixa_de_texto.value);
-        console.log(typeof expressao);
-        window.alert(`A soma é ${eval(caixa_de_texto.value)}`);
-        caixa_de_texto.value = "";
+    if(caixa_de_texto.value == ''){
+        window.alert("Insira valores para realizar a operação!");
+        flag = false;
     }
-
+    else if (flag) {
+        try{
+            let expressao;
+            expressao = eval(caixa_de_texto.value);
+             console.log(typeof expressao);
+            window.alert(`O resultado é ${eval(caixa_de_texto.value)}`);
+        caixa_de_texto.value = "";
+        }catch(e){
+           window.alert(`A expressão informada está errada!\nMotivo do error: ${e.message}`);
+        }
+    }
     while (numeros.length) { // Limpa o array
         numeros.pop();
     }
